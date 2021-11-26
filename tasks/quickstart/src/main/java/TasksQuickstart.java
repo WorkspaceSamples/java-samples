@@ -81,7 +81,7 @@ public class TasksQuickstart {
 
         // Print the first 10 task lists.
         TaskLists result = service.tasklists().list()
-                .setMaxResults(10L)
+                .setMaxResults(10)
                 .execute();
         List<TaskList> taskLists = result.getItems();
         if (taskLists == null || taskLists.isEmpty()) {
